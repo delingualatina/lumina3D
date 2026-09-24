@@ -50,7 +50,9 @@ export const metadata: Metadata = {
   },
 };
 
+import { Suspense } from "react";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import MetaPixel from "@/components/MetaPixel";
 
 export default function RootLayout({
   children,
@@ -71,6 +73,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased bg-[#fcf9f4] text-[#1c1c19] dark:bg-[#0c0c0e] dark:text-[#f4f4f5] min-h-screen flex flex-col selection:bg-amber-500/30 selection:text-amber-200">
+        <Suspense fallback={null}>
+          <MetaPixel />
+        </Suspense>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

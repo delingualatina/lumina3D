@@ -18,6 +18,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import rawProducts from "@/data/products.json";
 import { Product } from "@/types/product";
 import { formatPrice, getWhatsAppProductUrl } from "@/lib/whatsapp";
@@ -222,15 +223,13 @@ export default async function ProductPage({ params }: Props) {
 
               {/* WhatsApp Purchase CTA */}
               <div className="pt-4 space-y-3">
-                <a
-                  href={whatsAppUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-3 py-4 px-6 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-base shadow-[0_6px_20px_rgba(37,211,102,0.3)] transition-all hover:scale-[1.01]"
-                >
-                  <MessageCircle className="w-5 h-5 fill-white" />
-                  <span>Pedir este Modelo por WhatsApp</span>
-                </a>
+                <WhatsAppButton
+                  text="Pedir este Modelo por WhatsApp"
+                  size="lg"
+                  message={`¡Hola ${settings.storeName}! Quiero encargar el modelo *${product.name}* (Acabado: ${defaultFinish.name}).`}
+                  contentName={`Product Page: ${product.name} - ${defaultFinish.name}`}
+                  className="w-full"
+                />
                 <p className="text-center text-xs text-neutral-500 dark:text-neutral-400">
                   Envíos a domicilio • Coordinamos forma de pago y entrega directa
                 </p>

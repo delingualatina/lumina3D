@@ -3,17 +3,7 @@
 import React from "react";
 import { MessageCircle } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
-
-declare global {
-  interface Window {
-    fbq?: (
-      action: string,
-      eventName: string,
-      params?: Record<string, unknown>
-    ) => void;
-    dataLayer?: Record<string, unknown>[];
-  }
-}
+import { trackEvent } from "@/lib/fpixel";
 
 interface WhatsAppButtonProps {
   text?: string;
@@ -39,16 +29,14 @@ export default function WhatsAppButton({
   const whatsappUrl = getWhatsAppUrl(message);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // 1. Meta Pixel event tracking (fbq)
-    if (typeof window !== "undefined" && typeof window.fbq === "function") {
-      try {
-        window.fbq("track", "Contact", {
-          content_name: contentName,
-          content_category: "WhatsApp Conversion",
-        });
-      } catch (err) {
-        console.error("Meta Pixel tracking error:", err);
-      }
+    // 1. Meta Pixel event tracking (fbq) with Contact event and TEST code
+    try {
+      trackEvent("Contact", {
+        content_name: contentName,
+        content_category: "WhatsApp Conversion",
+      });
+    } catch (err) {
+      console.error("Meta Pixel tracking error:", err);
     }
 
     // 2. GTM / DataLayer push

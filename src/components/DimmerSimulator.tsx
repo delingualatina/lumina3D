@@ -20,6 +20,8 @@ const sampleLamps = [
   },
 ];
 
+import { trackEvent } from "@/lib/fpixel";
+
 export default function DimmerSimulator() {
   const [brightness, setBrightness] = useState<number>(85);
   const [selectedLamp, setSelectedLamp] = useState(sampleLamps[0]);
@@ -30,6 +32,11 @@ export default function DimmerSimulator() {
   const scaleGlow = 0.8 + (brightness / 100) * 0.4;
 
   const handleWhatsApp = () => {
+    trackEvent("Contact", {
+      content_name: `Dimmer Simulator: ${selectedLamp.name} (${brightness}%)`,
+      content_category: "Simulator WhatsApp Conversion",
+    });
+
     const text = `¡Hola ${settings.storeName}! Probé el simulador de luz con el modelo *${selectedLamp.name}* al ${brightness}%. Me gustaría consultar disponibilidad.`;
     window.open(
       `https://wa.me/${settings.whatsappNumber}?text=${encodeURIComponent(text)}`,
