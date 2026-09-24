@@ -1,58 +1,22 @@
 "use client";
 
-import React, { useEffect } from "react";
-import Script from "next/script";
+import { useEffect, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import { FB_PIXEL_ID, FB_TEST_EVENT_CODE, pageview } from "@/lib/fpixel";
+import { pageview } from "@/lib/fpixel";
 
 export default function MetaPixel() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const isFirstRender = useRef(true);
 
-  // Trigger PageView on route changes
+  // Trigger PageView only on subsequent SPA route changes
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
     pageview();
   }, [pathname, searchParams]);
 
-  if (!FB_PIXEL_ID) return null;
-
-  return (
-    <>
-      <Script
-        id="meta-pixel-script"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '${FB_PIXEL_ID}');
-            ${
-              FB_TEST_EVENT_CODE
-                ? `fbq('set', 'testEventCode', '${FB_TEST_EVENT_CODE}');`
-                : ""
-            }
-            fbq('track', 'PageView'${
-              FB_TEST_EVENT_CODE ? `, { test_event_code: '${FB_TEST_EVENT_CODE}' }` : ""
-            });
-          `,
-        }}
-      />
-      <noscript>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          height="1"
-          width="1"
-          style={{ display: "none" }}
-          src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-          alt="Meta Pixel"
-        />
-      </noscript>
-    </>
-  );
+  return null;
 }

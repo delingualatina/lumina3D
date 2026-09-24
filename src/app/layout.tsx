@@ -71,6 +71,34 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem("lumina-theme");if(t==="light"){document.documentElement.classList.remove("dark")}else{document.documentElement.classList.add("dark")}}catch(e){document.documentElement.classList.add("dark")}})();`,
           }}
         />
+        {/* Meta Pixel Base Code */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '1054376420476852');
+              fbq('set', 'testEventCode', 'TEST55323');
+              fbq('track', 'PageView', { test_event_code: 'TEST55323' });
+            `,
+          }}
+        />
+        <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1054376420476852&ev=PageView&noscript=1"
+            alt="Meta Pixel"
+          />
+        </noscript>
       </head>
       <body className="font-sans antialiased bg-[#fcf9f4] text-[#1c1c19] dark:bg-[#0c0c0e] dark:text-[#f4f4f5] min-h-screen flex flex-col selection:bg-amber-500/30 selection:text-amber-200">
         <Suspense fallback={null}>
