@@ -1,0 +1,113 @@
+[
+  {
+    "id": "lampara-constelacion",
+    "slug": "lampara-constelacion",
+    "name": "Lámpara Constelación",
+    "tagline": "Diseño paramétrico estriado con microperforaciones de luz y base trípode",
+    "description": "Luminaria escultural de mesa impresa en 3D capa por capa con bio-polímeros sustentables. Su cuerpo cilíndrico de estrías fluidas incorpora delicadas microperforaciones que proyectan destellos como estrellas en la noche, generando una atmósfera cálida, relajante y envolvente. Incluye base trípode minimalista y foco LED cálido.",
+    "category": "Mesa",
+    "price": 44500,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/lampara-constelacion.jpg",
+    "galleryImages": [
+      "/images/lampara-constelacion.jpg"
+    ],
+    "dimensions": {
+      "height": "24 cm",
+      "diameter": "18 cm",
+      "weight": "420 g"
+    },
+    "specs": {
+      "layerResolution": "0.20mm micro-capas de alta definición",
+      "material": "Bio-PLA sustentable de origen vegetal",
+      "bulbSocket": "E27 LED Cálido 2700K (Incluido)",
+      "cableType": "Cable textil con interruptor de paso",
+      "productionTime": "16 horas de impresión aditiva continua"
+    },
+    "finishes": [
+      {
+        "id": "blanco-marfil",
+        "name": "Blanco Marfil Traslúcido",
+        "hex": "#F6F3EE",
+        "description": "El acabado original de máxima difusión lumínica y destellos cálidos"
+      },
+      {
+        "id": "arena",
+        "name": "Arena Cálida",
+        "hex": "#E5DFD3",
+        "description": "Textura mate mineral suave"
+      },
+      {
+        "id": "terracota",
+        "name": "Terracota Silvestre",
+        "hex": "#C87D55",
+        "description": "Acento arcilla cálido que resalta la luz interior"
+      },
+      {
+        "id": "basalto",
+        "name": "Basalto Grafito",
+        "hex": "#343538",
+        "description": "Acabado moderno de alto contraste"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Entrega Inmediata)",
+    "featured": true,
+    "rating": 5.0,
+    "reviewsCount": 38
+  },
+  {
+    "id": "colgante-tessela",
+    "slug": "colgante-tessela",
+    "name": "Colgante Tessela 3D",
+    "tagline": "Luminaria colgante con trama micro-texturada y cuello estilizado para comedores y barras",
+    "description": "Luminaria de suspensión de silueta botánica contemporánea con textura celular micro-trenzada. Su superficie paramétrica filtra y suaviza la luz, generando una iluminación puntual cálida hacia mesas, islas de cocina y barras, con una presencia escultórica sobria tanto de forma individual como en composiciones triples.",
+    "category": "Colgante",
+    "price": 49500,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/colgante-textura-arena.jpg",
+    "galleryImages": [
+      "/images/colgante-textura-arena.jpg",
+      "/images/colgante-trio-ambiente.jpg"
+    ],
+    "dimensions": {
+      "height": "28 cm",
+      "diameter": "22 cm",
+      "weight": "380 g"
+    },
+    "specs": {
+      "layerResolution": "0.20mm micro-textura paramétrica",
+      "material": "Bio-PLA de origen vegetal sustentable",
+      "bulbSocket": "E27 LED Cálido 2700K (Incluido)",
+      "cableType": "Cable textil negro regulable 1.8m con florón a tono",
+      "productionTime": "18 horas de manufactura digital aditiva"
+    },
+    "finishes": [
+      {
+        "id": "arena-tostada",
+        "name": "Arena Tostada / Terracota Soft",
+        "hex": "#D2A679",
+        "description": "Tono cálido orgánico con micro-trama trenzada"
+      },
+      {
+        "id": "blanco-marfil",
+        "name": "Blanco Cáscara",
+        "hex": "#F6F3EE",
+        "description": "Difusión suave y acabado marfil"
+      },
+      {
+        "id": "basalto",
+        "name": "Basalto Grafito",
+        "hex": "#343538",
+        "description": "Acento sobrio de alto impacto visual"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Entrega Inmediata)",
+    "featured": true,
+    "rating": 4.9,
+    "reviewsCount": 24
+  }
+]

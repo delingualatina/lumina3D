@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fcf9f4;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'surface-bright': '#fcf9f4', 'outline': '#887364', 'on-tertiary-fixed-variant': '#005322', 'on-error-container': '#93000a', 'on-primary': '#ffffff', 'inverse-surface': '#31302d', 'inverse-on-surface': '#f3f0eb', 'surface-container-high': '#ebe8e3', 'secondary-fixed': '#e4e1e6', 'on-secondary-container': '#656467', 'surface': '#fcf9f4', 'surface-container': '#f0ede9', 'on-tertiary-container': '#f7fff3', 'surface-container-highest': '#e5e2dd', 'on-primary-container': '#fffbff', 'on-background': '#1c1c19', 'surface-dim': '#dcdad5', 'surface-variant': '#e5e2dd', 'inverse-primary': '#ffb77d', 'on-surface': '#1c1c19', 'tertiary-fixed': '#66ff8e', 'tertiary-fixed-dim': '#3de273', 'secondary': '#5f5e61', 'surface-tint': '#904d00', 'primary': '#8d4b00', 'on-primary-fixed-variant': '#6e3900', 'secondary-fixed-dim': '#c8c5ca', 'primary-fixed': '#ffdcc3', 'on-secondary-fixed-variant': '#47464a', 'tertiary': '#006b2e', 'background': '#fcf9f4', 'surface-container-lowest': '#ffffff', 'surface-container-low': '#f6f3ee', 'on-surface-variant': '#554336', 'on-primary-fixed': '#2f1500', 'on-tertiary-fixed': '#002109', 'primary-container': '#b15f00', 'on-secondary': '#ffffff', 'error': '#ba1a1a', 'outline-variant': '#dbc2b0', 'error-container': '#ffdad6', 'primary-fixed-dim': '#ffb77d', 'tertiary-container': '#00873c', 'on-error': '#ffffff', 'on-secondary-fixed': '#1b1b1e', 'secondary-container': '#e4e1e6', 'on-tertiary': '#ffffff' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'margin-lg': '4rem', 'margin': '1.25rem', 'margin-md': '2.5rem', 'space-xs': '0.25rem', 'space-2xl': '4rem', 'space-lg': '1.5rem', 'space-sm': '0.5rem', 'gutter-lg': '2rem', 'gutter': '1.5rem', 'space-md': '1rem', 'space-xl': '2.5rem' }, 'fontFamily': { 'body-sm': ['Plus Jakarta Sans'], 'label-lg': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'headline-lg': ['Plus Jakarta Sans'], 'headline-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'display-mobile': ['Plus Jakarta Sans'], 'label-mono': ['Plus Jakarta Sans'], 'display': ['Plus Jakarta Sans'], 'label-md': ['Plus Jakarta Sans'], 'headline-md': ['Plus Jakarta Sans'] }, 'fontSize': { 'body-sm': ['13px', { 'lineHeight': '20px', 'fontWeight': '400' }], 'label-lg': ['14px', { 'lineHeight': '20px', 'letterSpacing': '0.01em', 'fontWeight': '600' }], 'headline-lg-mobile': ['28px', { 'lineHeight': '34px', 'letterSpacing': '-0.015em', 'fontWeight': '600' }], 'body-lg': ['18px', { 'lineHeight': '28px', 'fontWeight': '400' }], 'headline-lg': ['40px', { 'lineHeight': '48px', 'letterSpacing': '-0.02em', 'fontWeight': '600' }], 'headline-sm': ['22px', { 'lineHeight': '28px', 'letterSpacing': '-0.005em', 'fontWeight': '600' }], 'body-md': ['15px', { 'lineHeight': '24px', 'fontWeight': '400' }], 'display-mobile': ['38px', { 'lineHeight': '44px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'label-mono': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.08em', 'fontWeight': '500' }], 'display': ['56px', { 'lineHeight': '64px', 'letterSpacing': '-0.03em', 'fontWeight': '700' }], 'label-md': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.04em', 'fontWeight': '600' }], 'headline-md': ['28px', { 'lineHeight': '36px', 'letterSpacing': '-0.01em', 'fontWeight': '600' }] } } } }</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-4 flex items-center justify-between gap-2"><div class="flex items-center gap-2 min-w-0 flex-1"><img alt="Lúmina 3D Mar del Plata Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC79UVSmRvjPZcSFQ06YF-rPFFDBC1zqXy1DQV1i6M-6aYGDWiKAIARn0uv2ImtKIthYVsZdyBQ2YaUzjrrQpeqv6z8Zvc5vi93qUhYpmSP6nctrF-n-8RAHBrqxiUwCp5nGqPaUxTPaU3vyVS7xIl4BBT_VCrCwRCB_JP4yHJr2sXGAP7S74Izlcc-5S6-vnxwNu8p-96Zic4rOKn4PS8Xzez15hZvGwnlNa5szg0V6haeEjRWckI"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface tracking-tight truncate">LÚMINA 3D</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase px-1 py-0.5 rounded bg-surface-container">Catálogo</span></div><span class="font-label-md text-label-md text-primary truncate flex items-center gap-0.5"><span>📍 Mar del Plata (Envíos &amp; Showroom)</span></span></div></div><div class="flex items-center gap-1.5 flex-shrink-0"><a aria-label="WhatsApp Concierge" class="h-11 w-11 rounded-lg bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_12px_rgba(37,211,102,0.2)] hover:opacity-95 transition-opacity" href="https://wa.me/" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-36 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="px-4 pt-3 pb-8">
+<!-- Local Exclusive Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 mb-4 max-w-full">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse flex-shrink-0"></span>
+<span class="font-label-mono text-label-mono text-primary font-semibold tracking-wider uppercase truncate">
+        📍 VENTA EXCLUSIVA MAR DEL PLATA • ENTREGA 24/48 HS
+      </span>
+</div>
+<!-- Title & Subtitle -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-3 tracking-tight">
+      Iluminación Escultural Impresa en 3D
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+      Piezas de diseño paramétrico fabricadas capa por capa en Mar del Plata con bio-polímeros sustentables. Luz cálida, texturas orgánicas y atmósfera única para tus espacios.
+    </p>
+<!-- Main Visual Showcase Card -->
+<div class="relative rounded-2xl overflow-hidden bg-surface-container-high shadow-lg mb-4">
+<div class="aspect-[4/5] w-full relative">
+<img alt="Lámpara Spiral Dune de mesa en Mar del Plata" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgOlExHrDZtm0yIAstRQmVd2uqonjryGfHPYDpiVs_jaD_tWxtp3IPm5J2-s8Dp8SpjUboPcps5UqIr5KATCzweR5XohjZ-5PY_DLAZAT5h3Jrn_-7EHgqWlxYKNW2PjreUI0zrT_uW82SR9Wfto13IgchbhuKxK4nYipPkM0Yw6yXCXjwFJSA9nPIV8kb-SU1l2CxW6-udba9-qy6RKuwY8T3evicF25uoRDPddmM2P91OkXfP9w"/>
+<!-- Floating Interactive Tag -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between p-3 rounded-xl bg-surface/90 backdrop-blur-md shadow-md">
+<div class="flex items-center gap-2">
+<span class="flex h-2.5 w-2.5 rounded-full bg-primary"></span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface leading-none">Modelo Spiral Dune</p>
+<p class="font-label-mono text-label-mono text-on-surface-variant">Edición Mesa • 32 cm</p>
+</div>
+</div>
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container text-on-surface-variant uppercase font-medium">
+            En Stock MDP
+          </span>
+</div>
+</div>
+</div>
+<!-- Interactive Dimmer Simulation Experience -->
+<div class="p-4 rounded-xl bg-surface-container-low mb-6">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">light_mode</span>
+<span class="font-label-lg text-label-lg">Simulador de Intensidad 2700K</span>
+</div>
+<span class="font-label-mono text-label-mono font-bold text-primary" id="dimmer-val">85%</span>
+</div>
+<input class="w-full accent-primary h-2 bg-surface-container-highest rounded-lg cursor-pointer" id="dimmer-slider" max="100" min="15" type="range" value="85"/>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+        Calidez difusa probada en ambientes residenciales de la costa atlántica.
+      </p>
+</div>
+<!-- Primary Hero CTA WhatsApp -->
+<a class="w-full py-3.5 px-4 rounded-xl bg-[#25D366] text-white font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:opacity-95 transition-all text-center mb-4" href="https://wa.me/5492235000000?text=Hola!%20Quiero%20consultar%20stock%20inmediato%20en%20Mar%20del%20Plata" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span>Pedir por WhatsApp • Chatear con Taller</span>
+</a>
+<!-- Local Micro Perks Bar -->
+<div class="grid grid-cols-1 gap-2.5 p-3.5 rounded-xl bg-surface-container-low text-on-surface-variant">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[20px] flex-shrink-0">local_shipping</span>
+<span class="font-body-sm text-body-sm">
+<strong>Envío sin cargo en MDP:</strong> Güemes, Playa Grande, Centro, Constitución y Stella Maris.
+        </span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0">payments</span>
+<span class="font-body-sm text-body-sm">
+<strong>Pago flexible:</strong> Contra entrega en efectivo o transferencia inmediata.
+        </span>
+</div>
+</div>
+</section>
+<!-- CATALOG: MODELOS DESTACADOS -->
+<section class="px-4 py-6 bg-surface-container-lowest">
+<div class="mb-5">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-primary text-[18px]">shapes</span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">Catálogo Actual</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Colección Lúmina MDP</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Modelos listos para entrega inmediata en la costa.</p>
+</div>
+<div class="flex flex-col gap-6">
+<!-- Item 1: Spiral Dune -->
+<article class="flex flex-col rounded-2xl bg-surface p-3 shadow-sm">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img alt="Lámpara Spiral Dune de mesa Mar del Plata" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgOlExHrDZtm0yIAstRQmVd2uqonjryGfHPYDpiVs_jaD_tWxtp3IPm5J2-s8Dp8SpjUboPcps5UqIr5KATCzweR5XohjZ-5PY_DLAZAT5h3Jrn_-7EHgqWlxYKNW2PjreUI0zrT_uW82SR9Wfto13IgchbhuKxK4nYipPkM0Yw6yXCXjwFJSA9nPIV8kb-SU1l2CxW6-udba9-qy6RKuwY8T3evicF25uoRDPddmM2P91OkXfP9w"/>
+<span class="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-mono text-label-mono text-on-surface font-semibold shadow-sm">
+            MESA • 32CM
+          </span>
+</div>
+<div class="flex flex-col px-1">
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Spiral Dune</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold whitespace-nowrap">$48.500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+            Estructura helicoidal con patrón celular interno que dispersa un haz cálido 360°. Interruptor metálico de toque continuo.
+          </p>
+<div class="flex items-center gap-2 mb-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-[#25D366]"></span> 3 cuotas sin interés
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+              LED 5W incluido
+            </span>
+</div>
+<a class="w-full py-3 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary transition-colors" href="https://wa.me/5492235000000?text=Hola!%20Quiero%20consultar%20por%20la%20lámpara%20Spiral%20Dune%20en%20Mar%20del%20Plata" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Consultar por WhatsApp</span>
+</a>
+</div>
+</article>
+<!-- Item 2: Colgante Helical Wave -->
+<article class="flex flex-col rounded-2xl bg-surface p-3 shadow-sm">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img alt="Colgante Helical Wave departamento vista al mar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy3nyVwnFlPXvhwzSnx_Rs0UnQF2oTJptdMDUad0mhTecUy3O15aoEoSF4Gpo3e6MaHPToFjcchWbco-OMmaqZol4st-P22s8XOX1Lrx_L8yM99c43_ylsnj4_wa8NL1mU1CL1AdNFkpAHqsYL1IoltxNb09RO8RxIbqzTyEVjEs5yjeC7ijKWPo9V8MS9jmk7F8yc0SjjsF_ePRmAuzq7wIU_WZFGI5a9HdAo782GjhGsqry9bCc"/>
+<span class="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-mono text-label-mono text-on-surface font-semibold shadow-sm">
+            COLGANTE • 45CM
+          </span>
+</div>
+<div class="flex flex-col px-1">
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Helical Wave</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold whitespace-nowrap">$56.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+            Ondulaciones orgánicas que evocan las mareas marplatenses. Incluye cable textil premium de 1.8m regulable y florón a tono.
+          </p>
+<div class="flex items-center gap-2 mb-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+              Apto living / comedor
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+              E27 universal
+            </span>
+</div>
+<a class="w-full py-3 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary transition-colors" href="https://wa.me/5492235000000?text=Hola!%20Quiero%20pedir%20el%20Colgante%20Helical%20Wave%20en%20Mar%20del%20Plata" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Pedir por WhatsApp</span>
+</a>
+</div>
+</article>
+<!-- Item 3: Lámpara Celular Voronoi -->
+<article class="flex flex-col rounded-2xl bg-surface p-3 shadow-sm">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img alt="Lámpara Celular Voronoi detalle de filamento artesanal" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7viHhFxUpOm28CtofivHrzOzV-HtAr_KiT9Qqyjndo3IL_P3QYcPOegdoaN-3J4Om299SwDnDoK00L9oBcl6X9x_KnNNUXyANDIAcIDAU2tC91yF8RsaVY2S8B1QkkIbRPBORzHL8xLqId1pghIUlOoFAr2sjZcyYPLBf9vo5h7eQ15dVcMJREX-ICJPnV5Mc6sWpNt-EhHokpkqwu0LSajYaCT-RPOCaDDwGf5ym8AUO1mO5Ab8"/>
+<span class="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md font-label-mono text-label-mono text-on-surface font-semibold shadow-sm">
+            ESFERA • 26CM
+          </span>
+</div>
+<div class="flex flex-col px-1">
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Celular Voronoi</h3>
+<span class="font-headline-sm text-headline-sm text-primary font-bold whitespace-nowrap">$42.000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+            Matriz matemática fractal de inspiración biológica. Proyecta delicadas sombras geométricas en paredes y mesitas de noche.
+          </p>
+<div class="flex items-center gap-2 mb-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+              Ámbar 2700K cálido
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+              Base antideslizante
+            </span>
+</div>
+<a class="w-full py-3 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary transition-colors" href="https://wa.me/5492235000000?text=Hola!%20Quiero%20comprar%20la%20lámpara%20Voronoi%20en%20Mar%20del%20Plata" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Comprar por WhatsApp</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- TECNOLOGÍA & MATERIALIDAD -->
+<section class="px-4 py-8">
+<div class="mb-4">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">Taller Local MDP</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Precisión Micrométrica &amp; Sostenibilidad</h2>
+</div>
+<!-- Macro Showcase Image Card -->
+<div class="relative rounded-2xl overflow-hidden mb-5 bg-surface-container-high">
+<div class="aspect-video w-full">
+<img alt="Detalle macro de filamento bio-polímero impreso en 3D en Mar del Plata" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7viHhFxUpOm28CtofivHrzOzV-HtAr_KiT9Qqyjndo3IL_P3QYcPOegdoaN-3J4Om299SwDnDoK00L9oBcl6X9x_KnNNUXyANDIAcIDAU2tC91yF8RsaVY2S8B1QkkIbRPBORzHL8xLqId1pghIUlOoFAr2sjZcyYPLBf9vo5h7eQ15dVcMJREX-ICJPnV5Mc6sWpNt-EhHokpkqwu0LSajYaCT-RPOCaDDwGf5ym8AUO1mO5Ab8"/>
+</div>
+<div class="p-4 bg-surface-container">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">biotech</span>
+<p class="font-label-lg text-label-lg text-on-surface">Capas de 0.2mm en Bio-PLA Costero</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Impresión aditiva sin desperdicio a partir de almidón de maíz no transgénico. Textura sedosa resistente a la salinidad y humedad marina.
+        </p>
+</div>
+</div>
+<!-- Value Grid -->
+<div class="grid grid-cols-1 gap-3">
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">eco</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">100% Biodegradable &amp; No Tóxico</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Polímeros de origen vegetal seguros para habitaciones de niños y mascotas.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">tungsten</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Iluminación LED Incluida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recibís tu lámpara lista para enchufar con foco cálido de bajo consumo certificado.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">cleaning_services</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Mantenimiento Simple</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Superficie lavable con paño húmedo. No pierde color ni sufre fatiga por calor lumínico.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PASO A PASO: COMPRA LOCAL EN MDP -->
+<section class="px-4 py-8 bg-surface-container-low">
+<div class="text-center mb-6">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">Proceso Ágil</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">¿Cómo comprar en Mar del Plata?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sin intermediarios, trato directo con el taller marplatense.</p>
+</div>
+<div class="space-y-3">
+<!-- Step 1 -->
+<div class="p-4 rounded-xl bg-surface flex items-start gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-mono text-label-mono flex items-center justify-center font-bold flex-shrink-0">
+          01
+        </div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface mb-0.5">Elegí tu modelo y terminación</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Seleccioná entre Blanco Cálido Cáscara, Terracota Natural, Arena Marplatense o Basalto Grafito.
+          </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-4 rounded-xl bg-surface flex items-start gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-mono text-label-mono flex items-center justify-center font-bold flex-shrink-0">
+          02
+        </div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface mb-0.5">Coordiná al instante por WhatsApp</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Tocá el botón directo para conversar con el taller, ver videos de la pieza encendida y confirmar stock.
+          </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-4 rounded-xl bg-surface flex items-start gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-mono text-label-mono flex items-center justify-center font-bold flex-shrink-0">
+          03
+        </div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface mb-0.5">Entrega local y pago al recibir</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Te lo llevamos a domicilio en 24/48 hs o retirás por punto pick-up en Güemes. Podés abonar al chequearla.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- BANNER PROYECTOS A MEDIDA & CONFIANZA -->
+<section class="px-4 py-8">
+<div class="p-5 rounded-2xl bg-inverse-surface text-inverse-on-surface shadow-md relative overflow-hidden">
+<div class="relative z-10">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary/30 text-primary-fixed mb-3">
+<span class="material-symbols-outlined text-[16px]">architecture</span>
+<span class="font-label-mono text-label-mono uppercase">Atelier de Diseño MDP</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2 text-inverse-on-surface">
+          ¿Buscás una medida o color especial para tu proyecto?
+        </h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80 mb-5 leading-relaxed">
+          Diseñamos y escalamos luminarias para departamentos, estudios y locales gastronómicos en Mar del Plata. Hablá en persona con el modelador 3D.
+        </p>
+<a class="w-full py-3.5 px-4 rounded-xl bg-[#25D366] text-white font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-lg hover:opacity-95 transition-all text-center" href="https://wa.me/5492235000000?text=Hola!%20Tengo%20un%20proyecto%20en%20Mar%20del%20Plata%20y%20quiero%20cotizar%20un%20diseño%20personalizado" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Iniciar Pedido en WhatsApp Business (+54 9 223)</span>
+</a>
+</div>
+</div>
+</section>
+<!-- FAQS LOCALES MDP -->
+<section class="px-4 pb-6">
+<div class="mb-4">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">Dudas Frecuentes</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Preguntas en Mar del Plata</h2>
+</div>
+<div class="space-y-2">
+<!-- FAQ 1 -->
+<details class="group p-3.5 rounded-xl bg-surface-container-low transition-all">
+<summary class="flex items-center justify-between font-label-lg text-label-lg text-on-surface cursor-pointer list-none">
+<span>¿Cuánto demora la entrega en mi barrio?</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+          Si el modelo está en stock, te lo llevamos en 24 a 48 hs hábiles a zonas como Güemes, Playa Grande, Centro, La Perla, Constitución y Caisamar sin costo extra. Para otras zonas de General Pueyrredón coordinamos punto de encuentro o mensajería rápida.
+        </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group p-3.5 rounded-xl bg-surface-container-low transition-all">
+<summary class="flex items-center justify-between font-label-lg text-label-lg text-on-surface cursor-pointer list-none">
+<span>¿Qué tipo de lámpara / foco utilizan?</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+          Utilizamos portalámparas normalizados E27 o E14 (según el modelo). Siempre recomendamos focos LED cálidos (2700K) de hasta 9W para garantizar un efecto visual óptimo y nula emisión térmica. Tu pedido ya incluye un foco probado y calibrado.
+        </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group p-3.5 rounded-xl bg-surface-container-low transition-all">
+<summary class="flex items-center justify-between font-label-lg text-label-lg text-on-surface cursor-pointer list-none">
+<span>¿Tienen punto para ver las lámparas en vivo?</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+          ¡Sí! Contamos con un espacio showroom / retiro coordinado en la zona de Güemes para que puedas apreciar la textura del filamento encendido antes de comprar. Escribinos por WhatsApp y agendamos tu visita.
+        </p>
+</details>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    const slider = document.getElementById('dimmer-slider');
+    const label = document.getElementById('dimmer-val');
+    if (slider && label) {
+      slider.addEventListener('input', (e) => {
+        label.textContent = e.target.value + '%';
+      });
+    }
+  })();
+</script></main><div class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)]"><div class="px-4 pt-2.5 pb-1"><a class="w-full h-11 rounded-lg bg-[#25D366] text-white font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(37,211,102,0.25)] hover:opacity-95 transition-all" href="https://wa.me/" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span>Comprar por WhatsApp 💬</span></a></div><nav class="flex items-center justify-around h-14 px-2" data-active-classes="text-primary font-semibold"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-md text-label-md mt-0.5">Catálogo</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="coleccion-3d" href="#"><span class="material-symbols-outlined text-[22px]">view_in_ar</span><span class="font-label-md text-label-md mt-0.5">Colección 3D</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="materiales" href="#"><span class="material-symbols-outlined text-[22px]">texture</span><span class="font-label-md text-label-md mt-0.5">Materiales</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="envios-mdp" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-md text-label-md mt-0.5">Envíos MDP</span></a></nav></div></body></html>
