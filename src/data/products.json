@@ -109,5 +109,161 @@
     "featured": true,
     "rating": 4.9,
     "reviewsCount": 24
+  },
+  {
+    "id": "lampara-vortice",
+    "slug": "lampara-vortice",
+    "name": "Lámpara Vórtice Twist",
+    "tagline": "Geometría helicoidal paramétrica con textura en espiral y base símil madera",
+    "description": "Luminaria escultural de mesa con silueta orgánica helicoidal impresa en 3D capa por capa. Sus ondas envolventes en espiral crean un cautivante juego de sombras y degradados lumínicos al encenderse. Montada sobre una base circular con acabado madera cálida, es ideal para mesas de noche, escritorios y rincones de lectura con personalidad.",
+    "category": "Mesa",
+    "price": 46500,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/lampara-vortice.jpg",
+    "galleryImages": [
+      "/images/lampara-vortice.jpg"
+    ],
+    "dimensions": {
+      "height": "22 cm",
+      "diameter": "16 cm",
+      "weight": "360 g"
+    },
+    "specs": {
+      "layerResolution": "0.20mm micro-capas de torsión continua",
+      "material": "Bio-PLA traslúcido y base texturada madera",
+      "bulbSocket": "E27 LED Cálido 2700K (Incluido)",
+      "cableType": "Cable textil con interruptor de paso",
+      "productionTime": "15 horas de impresión aditiva de precisión"
+    },
+    "finishes": [
+      {
+        "id": "blanco-marfil",
+        "name": "Blanco Marfil Traslúcido",
+        "hex": "#F6F3EE",
+        "description": "Difusión suave con textura estriada helicoidal"
+      },
+      {
+        "id": "arena",
+        "name": "Arena Cálida",
+        "hex": "#E5DFD3",
+        "description": "Tono mineral suave con base cálida"
+      },
+      {
+        "id": "terracota",
+        "name": "Terracota Silvestre",
+        "hex": "#C87D55",
+        "description": "Acento arcilla cálido que resalta la torsión de la forma"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Entrega Inmediata)",
+    "featured": true,
+    "rating": 5.0,
+    "reviewsCount": 19
+  },
+  {
+    "id": "lampara-plisse",
+    "slug": "lampara-plisse",
+    "name": "Lámpara Plissé Fluted",
+    "tagline": "Diseño estriado vertical de alta refracción y difusión suave 360°",
+    "description": "Luminaria cilíndrica de mesa caracterizada por sus estrías verticales facetadas de inspiración nórdica y clásica. Al encenderse, la luz se filtra a través de las micro-crestas creando un suave halo envolvente y un degradé hipnótico en techos y paredes cercanas. Su silueta serena y apertura cónica superior la convierten en una compañera ideal para mesas de noche y escritorios.",
+    "category": "Mesa",
+    "price": 43900,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/lampara-plisse-cylindro.jpg",
+    "galleryImages": [
+      "/images/lampara-plisse-cylindro.jpg"
+    ],
+    "dimensions": {
+      "height": "20 cm",
+      "diameter": "14 cm",
+      "weight": "320 g"
+    },
+    "specs": {
+      "layerResolution": "0.20mm micro-plisado continuo",
+      "material": "Bio-PLA traslúcido de origen vegetal",
+      "bulbSocket": "E27 LED Cálido 2700K (Incluido)",
+      "cableType": "Cable textil con interruptor de paso",
+      "productionTime": "13 horas de impresión aditiva continua"
+    },
+    "finishes": [
+      {
+        "id": "blanco-marfil",
+        "name": "Blanco Marfil Traslúcido",
+        "hex": "#F6F3EE",
+        "description": "Difusión diáfana de máxima luminosidad y calidez"
+      },
+      {
+        "id": "arena",
+        "name": "Arena Cálida",
+        "hex": "#E5DFD3",
+        "description": "Tono mineral mate suave"
+      },
+      {
+        "id": "basalto",
+        "name": "Basalto Grafito",
+        "hex": "#343538",
+        "description": "Acento moderno contemporáneo"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Entrega Inmediata)",
+    "featured": true,
+    "rating": 4.9,
+    "reviewsCount": 27
+  },
+  {
+    "id": "lampara-prisma-torsion",
+    "slug": "lampara-prisma-torsion",
+    "name": "Lámpara Prisma Torsión",
+    "tagline": "Silueta escultórica helicoidal de base cuadrangular sobre pedestal de madera",
+    "description": "Obra de iluminación paramétrica de gran porte que evoluciona desde una base cuadrada hasta un remate girado a 90 grados. Sus caras estriadas facetadas refractan la luz de forma asimétrica, convirtiéndose en el punto focal indiscutido de repisas, chimeneas, consolas de entrada y aparadores. Montada sobre una base de madera noble biselada.",
+    "category": "Escultural",
+    "price": 53900,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/lampara-prisma-torsion.jpg",
+    "galleryImages": [
+      "/images/lampara-prisma-torsion.jpg"
+    ],
+    "dimensions": {
+      "height": "34 cm",
+      "diameter": "16 cm",
+      "weight": "540 g"
+    },
+    "specs": {
+      "layerResolution": "0.20mm definición paramétrica",
+      "material": "Bio-PLA traslúcido y pedestal de madera natural",
+      "bulbSocket": "E27 LED Cálido 2700K (Incluido)",
+      "cableType": "Cable textil nórdico con interruptor",
+      "productionTime": "21 horas de manufactura digital"
+    },
+    "finishes": [
+      {
+        "id": "blanco-marfil",
+        "name": "Blanco Seda & Madera",
+        "hex": "#F6F3EE",
+        "description": "Acabado traslúcido sedoso sobre base cálida de madera"
+      },
+      {
+        "id": "arena-tostada",
+        "name": "Arena Tostada",
+        "hex": "#D2A679",
+        "description": "Tono terroso cálido contemporáneo"
+      },
+      {
+        "id": "terracota",
+        "name": "Terracota Silvestre",
+        "hex": "#C87D55",
+        "description": "Arcilla rústica que potencia la curvatura de la luz"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Entrega Inmediata)",
+    "featured": true,
+    "rating": 5.0,
+    "reviewsCount": 31
   }
 ]
