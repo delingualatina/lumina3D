@@ -33,7 +33,7 @@ export default function ProductCard({ product, onOpenDetail }: ProductCardProps)
         {/* Category & Dimensions Pill */}
         <div className="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
           <span className="px-3 py-1 rounded-full bg-black/75 dark:bg-[#0c0c0e]/90 backdrop-blur-md text-[11px] font-mono font-semibold uppercase text-neutral-100 shadow-lg border border-white/10">
-            {product.category} • {product.dimensions.height}
+            {product.categoryShort || product.category} • {product.dimensions.height}
           </span>
         </div>
 
@@ -105,7 +105,7 @@ export default function ProductCard({ product, onOpenDetail }: ProductCardProps)
                 {selectedFinish.id === finish.id && (
                   <Check
                     className={`w-3.5 h-3.5 ${
-                      finish.hex === "#343538" ? "text-white" : "text-neutral-950"
+                      finish.hex === "#343538" || finish.hex === "#26262B" ? "text-white" : "text-neutral-950"
                     }`}
                   />
                 )}
@@ -116,11 +116,23 @@ export default function ProductCard({ product, onOpenDetail }: ProductCardProps)
 
         {/* Micro Badges */}
         <div className="flex flex-wrap items-center gap-1.5 mb-5 mt-auto text-[11px] text-neutral-500 dark:text-neutral-400">
+          {product.specs.bulbSocket && (
+            <span className="px-2.5 py-1 rounded-lg bg-[#f0ede9] dark:bg-[#1c1c24] border border-neutral-200/70 dark:border-white/5 font-mono text-neutral-700 dark:text-neutral-300 truncate max-w-[170px]" title={product.specs.bulbSocket}>
+              {product.specs.bulbSocket.split("(")[0]}
+            </span>
+          )}
+          {product.specs.pickups && (
+            <span className="px-2.5 py-1 rounded-lg bg-[#f0ede9] dark:bg-[#1c1c24] border border-neutral-200/70 dark:border-white/5 font-mono text-neutral-700 dark:text-neutral-300">
+              ⚡ Sensor Piezoeléctrico
+            </span>
+          )}
+          {product.specs.irrigation && (
+            <span className="px-2.5 py-1 rounded-lg bg-[#f0ede9] dark:bg-[#1c1c24] border border-neutral-200/70 dark:border-white/5 font-mono text-neutral-700 dark:text-neutral-300">
+              🌿 Natura & Kokedama
+            </span>
+          )}
           <span className="px-2.5 py-1 rounded-lg bg-[#f0ede9] dark:bg-[#1c1c24] border border-neutral-200/70 dark:border-white/5 font-mono text-neutral-700 dark:text-neutral-300">
-            {product.specs.bulbSocket}
-          </span>
-          <span className="px-2.5 py-1 rounded-lg bg-[#f0ede9] dark:bg-[#1c1c24] border border-neutral-200/70 dark:border-white/5 font-mono text-neutral-700 dark:text-neutral-300">
-            {product.specs.layerResolution}
+            {product.specs.material.split(" ")[0]}
           </span>
         </div>
 
@@ -138,3 +150,4 @@ export default function ProductCard({ product, onOpenDetail }: ProductCardProps)
     </article>
   );
 }
+

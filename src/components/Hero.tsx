@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowRight, Sparkles, Truck, ShieldCheck } from "lucide-react";
+import { ArrowRight, Sparkles, Truck, ShieldCheck, Lamp, Music, Leaf } from "lucide-react";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import settings from "@/data/settings.json";
 
@@ -20,22 +20,35 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 mb-6 shadow-[0_0_15px_rgba(245,158,11,0.15)]">
               <span className="w-2.5 h-2.5 rounded-full bg-amber-500 animate-ping" />
               <span className="text-xs font-mono font-semibold tracking-wider uppercase text-amber-800 dark:text-amber-300">
-                Atelier de Iluminación 3D • Diseños Paramétricos
+                Atelier {settings.storeName} • Manufactura Aditiva de Vanguardia
               </span>
             </div>
 
             {/* Main Title */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-neutral-900 dark:text-white font-sans leading-[1.12] mb-6 transition-colors">
-              Iluminación Escultural <br className="hidden sm:inline" />
+              Arte, Luz y Sonido <br className="hidden sm:inline" />
               <span className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-700 dark:from-amber-400 dark:via-amber-300 dark:to-amber-500 bg-clip-text text-transparent">
-                Impresa en 3D
+                Impresos en 3D
               </span>
             </h1>
 
             {/* Description */}
-            <p className="text-lg sm:text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed mb-8 max-w-2xl font-light transition-colors">
-              Piezas de diseño paramétrico fabricadas capa por capa en nuestro atelier con bio-polímeros sustentables. Luz cálida, texturas orgánicas y atmósfera única para tus espacios.
+            <p className="text-lg sm:text-xl text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6 max-w-2xl font-light transition-colors">
+              Descubrí nuestras 3 líneas de diseño exclusivo: <strong>Lámparas Lumina</strong> con luz cálida 2700K, <strong>Instrumentos Luthier 3D</strong> con acústica aditiva y <strong>DecoVerde 3D</strong> con kokedamas y vida natural.
             </p>
+
+            {/* Quick 3 lines pills */}
+            <div className="flex flex-wrap gap-2 mb-8">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs font-medium text-amber-800 dark:text-amber-300">
+                <Lamp className="w-3.5 h-3.5 text-amber-600" /> Línea Lumina (Lámparas)
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-orange-500/10 border border-orange-500/25 text-xs font-medium text-orange-800 dark:text-orange-300">
+                <Music className="w-3.5 h-3.5 text-orange-600" /> Línea Luthier 3D (Instrumentos)
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-xs font-medium text-emerald-800 dark:text-emerald-300">
+                <Leaf className="w-3.5 h-3.5 text-emerald-600" /> DecoVerde 3D (Kokedamas & Natura)
+              </span>
+            </div>
 
             {/* Call to Actions */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
@@ -49,7 +62,7 @@ export default function Hero() {
                 href="#catalogo"
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-[#f0ede9] hover:bg-[#e5e2dd] text-neutral-800 dark:bg-[#1c1c22] dark:hover:bg-[#282830] dark:text-neutral-200 border border-neutral-200/80 dark:border-white/10 font-semibold text-base transition-all hover:-translate-y-0.5 shadow-md"
               >
-                <span>Ver Ficha y Fotos</span>
+                <span>Ver Colecciones 3D</span>
                 <ArrowRight className="w-4 h-4 text-amber-600 dark:text-amber-400" />
               </a>
             </div>
@@ -59,15 +72,15 @@ export default function Hero() {
               <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#f0ede9] dark:bg-[#141418] border border-neutral-200/80 dark:border-white/10 transition-colors">
                 <Truck className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0" />
                 <div className="text-xs text-neutral-600 dark:text-neutral-300">
-                  <span className="font-semibold block text-neutral-900 dark:text-white">Envíos Cuidados a Domicilio</span>
-                  Embalaje reforzado y entrega coordinada
+                  <span className="font-semibold block text-neutral-900 dark:text-white">Envíos Cuidados en Mar del Plata</span>
+                  Embalaje reforzado y entrega en mano
                 </div>
               </div>
               <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#f0ede9] dark:bg-[#141418] border border-neutral-200/80 dark:border-white/10 transition-colors">
                 <ShieldCheck className="w-5 h-5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
                 <div className="text-xs text-neutral-600 dark:text-neutral-300">
                   <span className="font-semibold block text-neutral-900 dark:text-white">Compra 100% Segura</span>
-                  Transferencia o efectivo contra entrega
+                  Transferencia (10% OFF) o contra entrega
                 </div>
               </div>
             </div>
@@ -78,8 +91,8 @@ export default function Hero() {
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#f0ede9] to-[#ebe8e3] dark:from-[#1c1c22] dark:to-[#121216] p-3 shadow-2xl dark:shadow-[0_0_50px_rgba(0,0,0,0.8)] border border-neutral-200/80 dark:border-white/10 transition-all">
               <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-neutral-900">
                 <Image
-                  src="/images/lampara-constelacion.jpg"
-                  alt="Lámpara 3D Constelación"
+                  src="/images/violin-electrico-3d.jpg"
+                  alt="Violín Eléctrico 3D Tutto3D"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   priority
@@ -94,15 +107,15 @@ export default function Hero() {
                     <div>
                       <div className="flex items-center gap-2 mb-1">
                         <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse" />
-                        <h3 className="font-bold text-white text-base">Lámpara Constelación</h3>
+                        <h3 className="font-bold text-white text-base">Violín Paramétrico Aura 3D</h3>
                       </div>
-                      <p className="text-xs text-neutral-300 dark:text-neutral-400 font-mono">Edición Mesa • 24 cm • Bio-PLA</p>
+                      <p className="text-xs text-neutral-300 dark:text-neutral-400 font-mono">Línea Luthier 3D • Carbon & Bio-PLA</p>
                     </div>
                     <div className="text-right">
                       <span className="text-xs font-mono uppercase px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-semibold">
                         En Stock
                       </span>
-                      <p className="text-sm font-bold text-amber-400 mt-1">$44.500</p>
+                      <p className="text-sm font-bold text-amber-400 mt-1">$185.000</p>
                     </div>
                   </div>
                 </div>
@@ -113,7 +126,7 @@ export default function Hero() {
             <div className="absolute -top-4 -right-4 bg-[#fcf9f4] dark:bg-[#18181f] text-neutral-900 dark:text-white p-3 rounded-2xl shadow-xl border border-amber-500/30 flex items-center gap-2 transition-colors">
               <Sparkles className="w-4 h-4 text-amber-500 dark:text-amber-400" />
               <span className="text-xs font-mono font-semibold tracking-wide uppercase text-amber-800 dark:text-amber-300">
-                Filamento 2700K Warm
+                Atelier 100% Argentino
               </span>
             </div>
           </div>
@@ -122,3 +135,4 @@ export default function Hero() {
     </section>
   );
 }
+

@@ -17,38 +17,47 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${settings.storeName} | ${settings.tagline} en ${settings.city}`,
+  title: `${settings.storeName} | Atelier 3D: Lámparas Lumina, Luthier 3D & DecoVerde en ${settings.city}`,
   description:
-    "Atelier de luminarias de diseño paramétrico impresas en 3D en Mar del Plata. Fabricación artesanal en Bio-PLA ecológico. Entregas a domicilio en 24/48 hs y pedidos directos por WhatsApp.",
+    "Atelier de diseño y manufactura aditiva en Mar del Plata. Lámparas paramétricas Línea Lumina, instrumentos musicales Línea Luthier 3D y diseño botánico DecoVerde 3D (natura y kokedamas). Envíos y pedidos por WhatsApp.",
   keywords: [
-    "lámparas 3d mar del plata",
-    "iluminación 3d",
+    "tutto3d",
+    "tutto 3d atelier",
+    "lámparas linea lumina",
+    "instrumentos luthier 3d",
+    "decoverde 3d",
+    "kokedamas 3d",
+    "violín 3d",
+    "ukelele 3d",
+    "mar del plata 3d",
     "diseño paramétrico",
-    "lámparas bio pla",
-    "decoración mar del plata",
-    "veladores 3d",
-    "lámparas colgantes 3d",
-    "lumina 3d atelier",
+    "bio pla sustentable",
   ],
   openGraph: {
     title: `${settings.storeName} | ${settings.tagline}`,
     description:
-      "Luminarias paramétricas 3D fabricadas en Mar del Plata con bio-polímeros sustentables. Coordiná directo por WhatsApp.",
+      "Atelier de diseño aditivo en Mar del Plata: Lámparas Lumina, Instrumentos Luthier 3D y DecoVerde Kokedamas. Coordiná directo por WhatsApp.",
     type: "website",
     locale: "es_AR",
     images: [
       {
-        url: "/images/spiral-dune.png",
+        url: "/images/violin-electrico-3d.jpg",
         width: 1200,
         height: 630,
-        alt: `${settings.storeName} Lámparas 3D`,
+        alt: `${settings.storeName} Creaciones 3D`,
       },
     ],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.png", sizes: "any" },
+      { url: "/favicon.ico" }
+    ],
+    apple: "/icon.png",
+    shortcut: "/icon.png",
   },
 };
+
 
 import { Suspense } from "react";
 import { ThemeProvider } from "@/components/ThemeProvider";

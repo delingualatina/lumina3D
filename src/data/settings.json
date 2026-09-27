@@ -1,13 +1,13 @@
 {
-  "storeName": "LÚMINA 3D",
-  "tagline": "Iluminación Escultural Impresa en 3D",
+  "storeName": "TUTTO 3D",
+  "tagline": "Atelier 3D • Lámparas Lumina, Luthier 3D & DecoVerde",
   "city": "Mar del Plata",
   "country": "Argentina",
   "phoneDisplay": "+54 9 223 500-0000",
   "whatsappNumber": "5492235000000",
-  "instagramHandle": "@lumina3d.mdp",
+  "instagramHandle": "@tutto3d.mdp",
   "instagramUrl": "https://instagram.com",
-  "email": "contacto@lumina3d.com.ar",
+  "email": "contacto@tutto3d.com.ar",
   "freeShippingZones": [
     "Güemes",
     "Playa Grande",
@@ -26,8 +26,8 @@
   ],
   "bankAccount": {
     "bankName": "Banco Santander / Mercado Pago",
-    "holderName": "Lúmina 3D Atelier MDP",
-    "alias": "LUMINA.3D.MDP",
+    "holderName": "Tutto 3D Atelier MDP",
+    "alias": "TUTTO.3D.MDP",
     "cbu": "0720123988000034567890",
     "cuit": "20-38492019-3",
     "instructions": "Al coordinar por WhatsApp, te reservamos la pieza y te enviamos los datos bancarios. Una vez realizada la transferencia o seña, coordinamos el día y franja horaria de entrega en tu domicilio en Mar del Plata o retiro en showroom."
@@ -35,3 +35,4 @@
   "pickupAddress": "Showroom / Atelier Zona Güemes, Mar del Plata (Cita previa por WhatsApp)",
   "businessHours": "Lunes a Sábados de 9:00 a 20:30 hs"
 }
+

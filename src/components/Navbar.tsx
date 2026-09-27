@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Sparkles, Menu, X, ArrowRight } from "lucide-react";
+
 import settings from "@/data/settings.json";
 
 import ThemeToggle from "@/components/ThemeToggle";
@@ -16,8 +18,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo & Atelier Info */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center shadow-[0_0_20px_rgba(245,158,11,0.35)] group-hover:scale-105 transition-transform overflow-hidden">
-              <span className="text-neutral-950 font-bold text-lg tracking-wider">L3D</span>
+            <div className="relative w-11 h-11 rounded-full overflow-hidden shadow-[0_0_20px_rgba(245,158,11,0.35)] group-hover:scale-105 transition-transform border border-amber-500/40 bg-neutral-950 flex-shrink-0">
+              <Image
+                src="/images/logo.png"
+                alt="Tutto3D Logo"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
@@ -29,10 +37,11 @@ export default function Navbar() {
                 </span>
               </div>
               <div className="flex items-center gap-1 text-xs text-neutral-500 dark:text-neutral-400 font-medium transition-colors">
-                <span>Atelier de Iluminación 3D</span>
+                <span>Lámparas • Luthier 3D • DecoVerde</span>
               </div>
             </div>
           </Link>
+
 
           {/* Desktop Nav Links */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-700 dark:text-neutral-300 transition-colors">
@@ -40,7 +49,7 @@ export default function Navbar() {
               href="#catalogo"
               className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors py-1 relative group"
             >
-              Catálogo de Lámparas
+              Colecciones 3D
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full" />
             </a>
             <a
@@ -100,7 +109,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-lg text-base font-medium text-neutral-800 dark:text-neutral-200 hover:bg-amber-500/10 hover:text-amber-600 dark:hover:text-amber-400"
           >
-            Catálogo de Lámparas
+            Colecciones 3D (Lámparas, Instrumentos, DecoVerde)
           </a>
           <a
             href="#simulador"
@@ -114,7 +123,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-lg text-base font-medium text-neutral-800 dark:text-neutral-200 hover:bg-amber-500/10 hover:text-amber-600 dark:hover:text-amber-400"
           >
-            Cómo Comprar
+            Cómo Comprar & Envíos
           </a>
           <a
             href="#faqs"
@@ -138,3 +147,4 @@ export default function Navbar() {
     </header>
   );
 }
+

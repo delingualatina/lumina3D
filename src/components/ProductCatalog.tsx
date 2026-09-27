@@ -4,13 +4,18 @@ import React, { useState, useMemo } from "react";
 import { Product, MaterialFinish } from "@/types/product";
 import ProductCard from "./ProductCard";
 import ProductDetailModal from "./ProductDetailModal";
-import { Search } from "lucide-react";
+import { Search, Sparkles, Lamp, Music, Leaf } from "lucide-react";
 
 interface ProductCatalogProps {
   initialProducts: Product[];
 }
 
-const categories = ["Todos", "Mesa", "Colgante", "De Pie", "Escultural"] as const;
+const categoryList = [
+  { id: "Todos", label: "Todos los Modelos", icon: null },
+  { id: "Lámparas (Línea Lumina)", label: "Lámparas (Línea Lumina)", icon: Lamp },
+  { id: "Instrumentos (Línea Luthier 3D)", label: "Instrumentos (Línea Luthier 3D)", icon: Music },
+  { id: "DecoVerde 3D (Natura, Kokedamas y 3D)", label: "DecoVerde 3D (Natura & Kokedamas)", icon: Leaf },
+] as const;
 
 export default function ProductCatalog({ initialProducts }: ProductCatalogProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
@@ -27,7 +32,8 @@ export default function ProductCatalog({ initialProducts }: ProductCatalogProps)
       const matchesSearch =
         p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        p.tagline.toLowerCase().includes(searchQuery.toLowerCase());
+        p.tagline.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (p.categoryShort && p.categoryShort.toLowerCase().includes(searchQuery.toLowerCase()));
 
       return matchesCategory && matchesStock && matchesSearch;
     });
@@ -47,23 +53,23 @@ export default function ProductCatalog({ initialProducts }: ProductCatalogProps)
             <div className="flex items-center gap-2 mb-2">
               <span className="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse" />
               <span className="text-xs font-mono font-bold uppercase tracking-widest text-amber-800 dark:text-amber-400">
-                Colección Exclusiva
+                Colección Tutto3D Atelier
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-neutral-900 dark:text-white font-sans tracking-tight transition-colors">
-              Catálogo de Lámparas 3D
+              Catálogo de Creaciones 3D
             </h2>
-            <p className="text-neutral-600 dark:text-neutral-400 mt-2 text-base max-w-xl font-light transition-colors">
-              Modelos de diseño paramétrico impresos capa a capa con bio-polímeros sustentables.
+            <p className="text-neutral-600 dark:text-neutral-400 mt-2 text-base max-w-2xl font-light transition-colors">
+              Explorá nuestras tres líneas exclusivas: <strong>Lámparas Lumina</strong>, <strong>Luthier 3D</strong> y <strong>DecoVerde 3D</strong> con bio-polímeros sustentables.
             </p>
           </div>
 
           {/* Search Input */}
-          <div className="relative w-full md:w-72">
+          <div className="relative w-full md:w-80">
             <Search className="w-4 h-4 text-neutral-500 dark:text-neutral-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Buscar por modelo o estilo..."
+              placeholder="Buscar lámpara, instrumento, kokedama..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-3 rounded-2xl bg-[#f0ede9] dark:bg-[#16161b] border border-neutral-200/80 dark:border-white/10 text-sm text-neutral-900 dark:text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all"
@@ -75,19 +81,23 @@ export default function ProductCatalog({ initialProducts }: ProductCatalogProps)
         <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-3xl bg-[#f0ede9] dark:bg-[#141418] border border-neutral-200/80 dark:border-white/10 mb-10 shadow-lg transition-colors">
           {/* Category Filter Pills */}
           <div className="flex flex-wrap items-center gap-2">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
-                  selectedCategory === cat
-                    ? "bg-amber-500 text-neutral-950 shadow-[0_0_15px_rgba(245,158,11,0.3)] font-bold scale-[1.02]"
-                    : "bg-[#fcf9f4] dark:bg-[#1c1c22] text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-[#282830] dark:hover:text-white border border-neutral-200/60 dark:border-white/5"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+            {categoryList.map((cat) => {
+              const Icon = cat.icon;
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 ${
+                    selectedCategory === cat.id
+                      ? "bg-amber-500 text-neutral-950 shadow-[0_0_15px_rgba(245,158,11,0.3)] font-bold scale-[1.02]"
+                      : "bg-[#fcf9f4] dark:bg-[#1c1c22] text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-[#282830] dark:hover:text-white border border-neutral-200/60 dark:border-white/5"
+                  }`}
+                >
+                  {Icon && <Icon className="w-3.5 h-3.5" />}
+                  <span>{cat.label}</span>
+                </button>
+              );
+            })}
           </div>
 
           {/* Stock Toggle */}
@@ -102,7 +112,7 @@ export default function ProductCatalog({ initialProducts }: ProductCatalogProps)
               <span>Sólo En Stock</span>
             </label>
             <span className="text-xs font-mono px-3 py-1 rounded-full bg-white dark:bg-[#202028] text-amber-800 dark:text-amber-300 border border-neutral-200 dark:border-amber-500/20 font-bold shadow-sm">
-              {filteredProducts.length} {filteredProducts.length === 1 ? "modelo" : "modelos"}
+              {filteredProducts.length} {filteredProducts.length === 1 ? "pieza" : "piezas"}
             </span>
           </div>
         </div>
@@ -121,7 +131,7 @@ export default function ProductCatalog({ initialProducts }: ProductCatalogProps)
         ) : (
           <div className="text-center py-16 px-4 rounded-3xl bg-[#f0ede9] dark:bg-[#141418] border border-neutral-200/80 dark:border-white/10">
             <p className="text-lg font-bold text-neutral-900 dark:text-white">
-              No se encontraron modelos con los filtros seleccionados.
+              No se encontraron piezas con los filtros seleccionados.
             </p>
             <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-2">
               Probá limpiando la búsqueda o seleccionando otra categoría.
@@ -149,3 +159,4 @@ export default function ProductCatalog({ initialProducts }: ProductCatalogProps)
     </section>
   );
 }
+

@@ -4,8 +4,9 @@
     "slug": "lampara-constelacion",
     "name": "Lámpara Constelación",
     "tagline": "Diseño paramétrico estriado con microperforaciones de luz y base trípode",
-    "description": "Luminaria escultural de mesa impresa en 3D capa por capa con bio-polímeros sustentables. Su cuerpo cilíndrico de estrías fluidas incorpora delicadas microperforaciones que proyectan destellos como estrellas en la noche, generando una atmósfera cálida, relajante y envolvente. Incluye base trípode minimalista y foco LED cálido.",
-    "category": "Mesa",
+    "description": "Luminaria escultural de mesa de la Línea Lumina impresa en 3D con bio-polímeros sustentables. Su cuerpo cilíndrico de estrías fluidas incorpora delicadas microperforaciones que proyectan destellos estelares, generando una atmósfera cálida y envolvente. Incluye base trípode minimalista y foco LED cálido.",
+    "category": "Lámparas (Línea Lumina)",
+    "categoryShort": "Lámpara Lumina",
     "price": 44500,
     "currency": "ARS",
     "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
@@ -62,8 +63,9 @@
     "slug": "colgante-tessela",
     "name": "Colgante Tessela 3D",
     "tagline": "Luminaria colgante con trama micro-texturada y cuello estilizado para comedores y barras",
-    "description": "Luminaria de suspensión de silueta botánica contemporánea con textura celular micro-trenzada. Su superficie paramétrica filtra y suaviza la luz, generando una iluminación puntual cálida hacia mesas, islas de cocina y barras, con una presencia escultórica sobria tanto de forma individual como en composiciones triples.",
-    "category": "Colgante",
+    "description": "Luminaria de suspensión de silueta botánica contemporánea de la Línea Lumina. Su superficie paramétrica filtra y suaviza la luz, generando una iluminación puntual cálida hacia mesas, islas de cocina y barras, con una presencia escultórica sobria tanto individual como en tríos.",
+    "category": "Lámparas (Línea Lumina)",
+    "categoryShort": "Lámpara Lumina",
     "price": 49500,
     "currency": "ARS",
     "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
@@ -115,8 +117,9 @@
     "slug": "lampara-vortice",
     "name": "Lámpara Vórtice Twist",
     "tagline": "Geometría helicoidal paramétrica con textura en espiral y base símil madera",
-    "description": "Luminaria escultural de mesa con silueta orgánica helicoidal impresa en 3D capa por capa. Sus ondas envolventes en espiral crean un cautivante juego de sombras y degradados lumínicos al encenderse. Montada sobre una base circular con acabado madera cálida, es ideal para mesas de noche, escritorios y rincones de lectura con personalidad.",
-    "category": "Mesa",
+    "description": "Luminaria escultural de mesa con silueta orgánica helicoidal de la Línea Lumina. Sus ondas envolventes en espiral crean un cautivante juego de sombras y degradados lumínicos al encenderse. Montada sobre base circular cálida, ideal para mesas de noche y escritorios.",
+    "category": "Lámparas (Línea Lumina)",
+    "categoryShort": "Lámpara Lumina",
     "price": 46500,
     "currency": "ARS",
     "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
@@ -167,8 +170,9 @@
     "slug": "lampara-plisse",
     "name": "Lámpara Plissé Fluted",
     "tagline": "Diseño estriado vertical de alta refracción y difusión suave 360°",
-    "description": "Luminaria cilíndrica de mesa caracterizada por sus estrías verticales facetadas de inspiración nórdica y clásica. Al encenderse, la luz se filtra a través de las micro-crestas creando un suave halo envolvente y un degradé hipnótico en techos y paredes cercanas. Su silueta serena y apertura cónica superior la convierten en una compañera ideal para mesas de noche y escritorios.",
-    "category": "Mesa",
+    "description": "Luminaria cilíndrica de mesa de la Línea Lumina caracterizada por sus estrías verticales facetadas de inspiración nórdica y clásica. Al encenderse, la luz se filtra a través de las micro-crestas creando un suave halo envolvente y un degradé hipnótico en techos y paredes.",
+    "category": "Lámparas (Línea Lumina)",
+    "categoryShort": "Lámpara Lumina",
     "price": 43900,
     "currency": "ARS",
     "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
@@ -210,7 +214,7 @@
     ],
     "stockStatus": "in_stock",
     "stockText": "En Stock (Entrega Inmediata)",
-    "featured": true,
+    "featured": false,
     "rating": 4.9,
     "reviewsCount": 27
   },
@@ -219,8 +223,9 @@
     "slug": "lampara-prisma-torsion",
     "name": "Lámpara Prisma Torsión",
     "tagline": "Silueta escultórica helicoidal de base cuadrangular sobre pedestal de madera",
-    "description": "Obra de iluminación paramétrica de gran porte que evoluciona desde una base cuadrada hasta un remate girado a 90 grados. Sus caras estriadas facetadas refractan la luz de forma asimétrica, convirtiéndose en el punto focal indiscutido de repisas, chimeneas, consolas de entrada y aparadores. Montada sobre una base de madera noble biselada.",
-    "category": "Escultural",
+    "description": "Obra de iluminación paramétrica de gran porte de la Línea Lumina que evoluciona desde una base cuadrada hasta un remate girado a 90 grados. Sus caras estriadas facetadas refractan la luz de forma asimétrica sobre un pedestal biselado de madera natural.",
+    "category": "Lámparas (Línea Lumina)",
+    "categoryShort": "Lámpara Lumina",
     "price": 53900,
     "currency": "ARS",
     "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
@@ -265,5 +270,312 @@
     "featured": true,
     "rating": 5.0,
     "reviewsCount": 31
+  },
+  {
+    "id": "violin-electrico-aura-3d",
+    "slug": "violin-electrico-aura-3d",
+    "name": "Violín Eléctrico Paramétrico Aura 3D",
+    "tagline": "Línea Luthier 3D: Estructura esqueletal voronoi ultraliviana con captación piezoeléctrica activa",
+    "description": "Instrumento de concierto de la Línea Luthier 3D Tutto3D. Diseñado mediante simulación acústica por elementos finitos y fabricado con celosía voronoi bio-polimérica y alma de fibra de carbono. Ofrece un sustain cristalino, resonancia libre de acoples y comodidad ergonómica inigualable. Salida estándar de 1/4 y previo activo.",
+    "category": "Instrumentos (Línea Luthier 3D)",
+    "categoryShort": "Luthier 3D",
+    "price": 185000,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/violin-electrico-3d.jpg",
+    "galleryImages": [
+      "/images/violin-electrico-3d.jpg"
+    ],
+    "dimensions": {
+      "height": "60 cm",
+      "width": "21 cm",
+      "weight": "490 g"
+    },
+    "specs": {
+      "layerResolution": "0.16mm precisión de luthería aditiva",
+      "material": "Bio-Composite reforzado con fibra de carbono y alma de grafito",
+      "pickups": "Sensor piezoeléctrico puente activo con control de volumen y tono",
+      "tuning": "Clavijero mecánico Wittner Finetune de ultra precisión",
+      "productionTime": "36 horas de impresión y calibración artesanal en taller"
+    },
+    "finishes": [
+      {
+        "id": "marfil-grafito",
+        "name": "Marfil Atelier & Grafito",
+        "hex": "#F4F0EA",
+        "description": "Cuerpo esqueletal marfil mate con diapasón negro carbón"
+      },
+      {
+        "id": "basalto-mate",
+        "name": "Basalto Stealth",
+        "hex": "#26262B",
+        "description": "Negro profundo mate contemporáneo"
+      },
+      {
+        "id": "terracota-rustico",
+        "name": "Terracota Luthiery",
+        "hex": "#C87D55",
+        "description": "Tono cálido tradicional con textura aditiva visible"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Calibrado en Taller)",
+    "featured": true,
+    "rating": 5.0,
+    "reviewsCount": 16
+  },
+  {
+    "id": "ukelele-honeycomb-resonator",
+    "slug": "ukelele-honeycomb-resonator",
+    "name": "Ukelele Concierto Honeycomb 3D",
+    "tagline": "Línea Luthier 3D: Tapa armónica en panal de abejas paramétrico para una proyección brillante",
+    "description": "Ukelele tamaño concierto de la Línea Luthier 3D con cámara de resonancia optimizada computacionalmente. Su estructura de panal micro-celular permite una vibración simétrica y un timbre cálido, dulce y con gran volumen acústico natural. Puente de madera noble y clavijeros blindados.",
+    "category": "Instrumentos (Línea Luthier 3D)",
+    "categoryShort": "Luthier 3D",
+    "price": 89000,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/ukelele-honeycomb-3d.jpg",
+    "galleryImages": [
+      "/images/ukelele-honeycomb-3d.jpg"
+    ],
+    "dimensions": {
+      "height": "61 cm",
+      "width": "22 cm",
+      "weight": "410 g"
+    },
+    "specs": {
+      "layerResolution": "0.18mm optimización de resonancia",
+      "material": "Bio-PLA acústico mineral con mástil de madera dura",
+      "tuning": "Clavijero blindado 1:18 con cuerdas Aquila Supernylgut",
+      "productionTime": "24 horas de manufactura aditiva y ajuste manual"
+    },
+    "finishes": [
+      {
+        "id": "terracota-madera",
+        "name": "Terracota Acústico & Cedro",
+        "hex": "#BA6844",
+        "description": "Acabado cálido con textura de panal abierta"
+      },
+      {
+        "id": "arena-tostada",
+        "name": "Arena Tostada",
+        "hex": "#D2A679",
+        "description": "Tono natural mate de alta vibración"
+      },
+      {
+        "id": "blanco-marfil",
+        "name": "Blanco Cáscara",
+        "hex": "#F6F3EE",
+        "description": "Estética nórdica minimalista"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Listo para Tocar)",
+    "featured": true,
+    "rating": 4.9,
+    "reviewsCount": 21
+  },
+  {
+    "id": "guitarra-silent-nexus-3d",
+    "slug": "guitarra-silent-nexus-3d",
+    "name": "Guitarra Silent Nexus Travel 3D",
+    "tagline": "Línea Luthier 3D: Guitarra silenciosa de marco ergonómico modular desmontable",
+    "description": "Guitarra electroacústica silenciosa de viaje de la Línea Luthier 3D. Su marco exterior curvado es desmontable para transportarla cómodamente en mochila. Posee previo con salida directa para auriculares (para practicar en silencio) y conexión plug para amplificador o placa de audio de estudio.",
+    "category": "Instrumentos (Línea Luthier 3D)",
+    "categoryShort": "Luthier 3D",
+    "price": 220000,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/guitarra-travel-3d.jpg",
+    "galleryImages": [
+      "/images/guitarra-travel-3d.jpg"
+    ],
+    "dimensions": {
+      "height": "85 cm",
+      "width": "30 cm",
+      "weight": "1150 g"
+    },
+    "specs": {
+      "layerResolution": "0.20mm micro-nervaduras de refuerzo",
+      "material": "Cuerpo central en madera estacionada con aletas impresas en 3D",
+      "pickups": "Preamp activo con EQ de 2 bandas, afinador y salida 3.5mm/6.3mm",
+      "productionTime": "40 horas de maquinado e impresión de precisión"
+    },
+    "finishes": [
+      {
+        "id": "blanco-nogal",
+        "name": "Blanco Seda & Nogal",
+        "hex": "#F4F0EA",
+        "description": "Aletas marfil mate y centro de madera natural"
+      },
+      {
+        "id": "basalto-grafito",
+        "name": "Basalto & Ébano",
+        "hex": "#343538",
+        "description": "Acabado mate de alto contraste para escenario"
+      }
+    ],
+    "stockStatus": "made_to_order",
+    "stockText": "Fabricación por Pedido (7 días)",
+    "featured": true,
+    "rating": 5.0,
+    "reviewsCount": 12
+  },
+  {
+    "id": "kokedama-flotante-levita",
+    "slug": "kokedama-flotante-levita",
+    "name": "Kokedama Flotante Levita Natura 3D",
+    "tagline": "DecoVerde 3D: Cuna geométrica de levitación magnética con esfera vegetal viva",
+    "description": "Pieza emblemática de la línea DecoVerde 3D (Natura, Kokedamas y 3D) de Tutto3D. Una cuna paramétrica impresa en bio-polímero mineral que sostiene y hace levitar en el aire una auténtica bola de kokedama con musgo vivo y helecho o ficus micro. Rotación suave y efecto zen hipnótico.",
+    "category": "DecoVerde 3D (Natura, Kokedamas y 3D)",
+    "categoryShort": "DecoVerde 3D",
+    "price": 68000,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/kokedama-flotante-3d.jpg",
+    "galleryImages": [
+      "/images/kokedama-flotante-3d.jpg"
+    ],
+    "dimensions": {
+      "height": "25 cm",
+      "diameter": "16 cm",
+      "weight": "850 g"
+    },
+    "specs": {
+      "layerResolution": "0.16mm estriado de alta fidelidad",
+      "material": "Bio-PLA mineral blanco arena y base electromagnética de bajo consumo",
+      "irrigation": "Esfera kokedama de musgo vivo por inmersión semanal",
+      "productionTime": "19 horas de impresión aditiva continua"
+    },
+    "finishes": [
+      {
+        "id": "arena-mineral",
+        "name": "Arena Mineral & Blanco",
+        "hex": "#E5DFD3",
+        "description": "Textura pétrea suave que realza el verde vivo"
+      },
+      {
+        "id": "terracota-soft",
+        "name": "Terracota Soft",
+        "hex": "#C87D55",
+        "description": "Tono tierra cocida artesanal"
+      },
+      {
+        "id": "basalto-zen",
+        "name": "Basalto Zen",
+        "hex": "#343538",
+        "description": "Piedra negra volcánica para contraste vegetal"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Incluye Kokedama Viva)",
+    "featured": true,
+    "rating": 5.0,
+    "reviewsCount": 42
+  },
+  {
+    "id": "maceta-autorriego-oasis-voronoi",
+    "slug": "maceta-autorriego-oasis-voronoi",
+    "name": "Maceta Autorriego Biomimética Oasis 3D",
+    "tagline": "DecoVerde 3D: Sistema capilar pasivo con malla celular exterior y depósito oculto",
+    "description": "Maceta de diseño celular orgánico de la línea DecoVerde 3D. Cuenta con un reservorio inferior inteligente que abastece de humedad a las raíces de forma autónoma durante hasta 3 semanas mediante mecha capilar de algodón bio. El visor inferior indica cuándo recargar agua.",
+    "category": "DecoVerde 3D (Natura, Kokedamas y 3D)",
+    "categoryShort": "DecoVerde 3D",
+    "price": 32500,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/maceta-autorriego-3d.jpg",
+    "galleryImages": [
+      "/images/maceta-autorriego-3d.jpg"
+    ],
+    "dimensions": {
+      "height": "17 cm",
+      "diameter": "15 cm",
+      "weight": "290 g"
+    },
+    "specs": {
+      "layerResolution": "0.20mm celosía voronoi orgánica",
+      "material": "Bio-PLA impermeable de alta densidad con pigmentos minerales",
+      "irrigation": "Depósito de 350ml con mecha capilar autorregulable",
+      "productionTime": "12 horas de manufactura aditiva"
+    },
+    "finishes": [
+      {
+        "id": "arena-terracota",
+        "name": "Arena Cálida & Terracota",
+        "hex": "#D2A679",
+        "description": "Bicolor con celosía exterior arena y base terracota"
+      },
+      {
+        "id": "blanco-marfil",
+        "name": "Blanco Marfil Monocromo",
+        "hex": "#F6F3EE",
+        "description": "Diseño puro y luminoso"
+      },
+      {
+        "id": "verde-oliva",
+        "name": "Oliva Botánico & Arena",
+        "hex": "#606C38",
+        "description": "Acento natural y botánico"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Entrega Inmediata)",
+    "featured": true,
+    "rating": 4.9,
+    "reviewsCount": 29
+  },
+  {
+    "id": "jardin-vertical-hexaflora",
+    "slug": "jardin-vertical-hexaflora",
+    "name": "Cuadro Jardín Vertical HexaFlora 3D",
+    "tagline": "DecoVerde 3D: Módulo mural hexagonal paramétrico con musgo nórdico y suculentas",
+    "description": "Cuadro botánico tridimensional para pared de la línea DecoVerde 3D. Módulo hexagonal entrelazable con celdas profundas para musgo nórdico preservado y plantas crasas vivas. Crea composiciones vivas y escultóricas en living, oficinas y recepciones sin mantenimiento.",
+    "category": "DecoVerde 3D (Natura, Kokedamas y 3D)",
+    "categoryShort": "DecoVerde 3D",
+    "price": 54000,
+    "currency": "ARS",
+    "installmentsText": "3 cuotas sin interés o 10% OFF por transferencia",
+    "image": "/images/jardin-vertical-3d.jpg",
+    "galleryImages": [
+      "/images/jardin-vertical-3d.jpg"
+    ],
+    "dimensions": {
+      "height": "38 cm",
+      "width": "35 cm",
+      "weight": "680 g"
+    },
+    "specs": {
+      "layerResolution": "0.20mm panal hexagonal reforzado",
+      "material": "Bio-PLA texturado símil madera clara con anclajes ocultos",
+      "irrigation": "Musgo preservado cero mantenimiento + celdas para suculentas",
+      "productionTime": "22 horas de manufactura digital"
+    },
+    "finishes": [
+      {
+        "id": "madera-clara",
+        "name": "Símil Madera Clara & Musgo",
+        "hex": "#E5DFD3",
+        "description": "Acabado cálido y natural con musgo verde bosque"
+      },
+      {
+        "id": "blanco-seda",
+        "name": "Blanco Seda Escultural",
+        "hex": "#F6F3EE",
+        "description": "Marco blanco brillante de alto contraste vegetal"
+      },
+      {
+        "id": "basalto-grafito",
+        "name": "Basalto Industrial",
+        "hex": "#343538",
+        "description": "Estilo moderno nórdico e industrial"
+      }
+    ],
+    "stockStatus": "in_stock",
+    "stockText": "En Stock (Entrega Inmediata)",
+    "featured": true,
+    "rating": 5.0,
+    "reviewsCount": 25
   }
 ]

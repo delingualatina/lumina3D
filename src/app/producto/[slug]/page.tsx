@@ -41,13 +41,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!product) {
     return {
-      title: "Producto no encontrado | Lúmina 3D",
+      title: "Producto no encontrado | Tutto3D",
     };
   }
 
   return {
-    title: `${product.name} | Lámpara 3D Mar del Plata - ${settings.storeName}`,
-    description: `${product.tagline}. Fabricada en Mar del Plata con bio-polímeros sustentables. Envío 24/48 hs.`,
+    title: `${product.name} | ${product.categoryShort || product.category} - ${settings.storeName}`,
+    description: `${product.tagline}. Fabricada en Mar del Plata con bio-polímeros sustentables.`,
     openGraph: {
       title: `${product.name} - ${settings.storeName}`,
       description: product.description,
@@ -65,7 +65,6 @@ export default async function ProductPage({ params }: Props) {
   }
 
   const defaultFinish = product.finishes[0];
-  const whatsAppUrl = getWhatsAppProductUrl(product, defaultFinish);
 
   return (
     <div className="flex flex-col min-h-screen bg-[#fcf9f4] dark:bg-[#0c0c0e] text-neutral-900 dark:text-[#f4f4f5] transition-colors duration-300">
@@ -197,7 +196,10 @@ export default async function ProductPage({ params }: Props) {
                   <div>
                     <span className="text-neutral-500 dark:text-neutral-400 block text-[10px] uppercase font-mono">Dimensiones</span>
                     <span className="font-semibold text-neutral-900 dark:text-white">
-                      {product.dimensions.height} x {product.dimensions.diameter} ({product.dimensions.weight})
+                      {product.dimensions.height}
+                      {product.dimensions.diameter ? ` x ⌀${product.dimensions.diameter}` : ""}
+                      {product.dimensions.width ? ` x ${product.dimensions.width}` : ""}
+                      {` (${product.dimensions.weight})`}
                     </span>
                   </div>
                   <div>
@@ -206,16 +208,48 @@ export default async function ProductPage({ params }: Props) {
                       {product.specs.layerResolution}
                     </span>
                   </div>
-                  <div>
-                    <span className="text-neutral-500 dark:text-neutral-400 block text-[10px] uppercase font-mono">Foco & Rosca</span>
-                    <span className="font-semibold text-neutral-900 dark:text-white">
-                      {product.specs.bulbSocket}
-                    </span>
-                  </div>
+                  {product.specs.bulbSocket && (
+                    <div>
+                      <span className="text-neutral-500 dark:text-neutral-400 block text-[10px] uppercase font-mono">Foco & Iluminación</span>
+                      <span className="font-semibold text-neutral-900 dark:text-white">
+                        {product.specs.bulbSocket}
+                      </span>
+                    </div>
+                  )}
+                  {product.specs.pickups && (
+                    <div>
+                      <span className="text-neutral-500 dark:text-neutral-400 block text-[10px] uppercase font-mono">Captación Acústica</span>
+                      <span className="font-semibold text-neutral-900 dark:text-white">
+                        {product.specs.pickups}
+                      </span>
+                    </div>
+                  )}
+                  {product.specs.tuning && (
+                    <div>
+                      <span className="text-neutral-500 dark:text-neutral-400 block text-[10px] uppercase font-mono">Afinación</span>
+                      <span className="font-semibold text-neutral-900 dark:text-white">
+                        {product.specs.tuning}
+                      </span>
+                    </div>
+                  )}
+                  {product.specs.irrigation && (
+                    <div>
+                      <span className="text-neutral-500 dark:text-neutral-400 block text-[10px] uppercase font-mono">Sistema Botánico</span>
+                      <span className="font-semibold text-neutral-900 dark:text-white">
+                        {product.specs.irrigation}
+                      </span>
+                    </div>
+                  )}
                   <div>
                     <span className="text-neutral-500 dark:text-neutral-400 block text-[10px] uppercase font-mono">Bio-Material</span>
                     <span className="font-semibold text-neutral-900 dark:text-white">
                       {product.specs.material}
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-neutral-500 dark:text-neutral-400 block text-[10px] uppercase font-mono">Tiempo Producción</span>
+                    <span className="font-semibold text-neutral-900 dark:text-white">
+                      {product.specs.productionTime}
                     </span>
                   </div>
                 </div>
@@ -244,3 +278,4 @@ export default async function ProductPage({ params }: Props) {
     </div>
   );
 }
+

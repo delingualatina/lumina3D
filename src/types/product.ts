@@ -5,13 +5,20 @@ export interface MaterialFinish {
   description: string;
 }
 
+export type ProductCategory =
+  | "Lámparas (Línea Lumina)"
+  | "Instrumentos (Línea Luthier 3D)"
+  | "DecoVerde 3D (Natura, Kokedamas y 3D)"
+  | string;
+
 export interface Product {
   id: string;
   slug: string;
   name: string;
   tagline: string;
   description: string;
-  category: "Mesa" | "Colgante" | "De Pie" | "Escultural";
+  category: ProductCategory;
+  categoryShort?: string;
   price: number;
   currency: string;
   installmentsText: string;
@@ -19,15 +26,20 @@ export interface Product {
   galleryImages: string[];
   dimensions: {
     height: string;
-    diameter: string;
+    diameter?: string;
+    width?: string;
+    depth?: string;
     weight: string;
   };
   specs: {
-    layerResolution: string; // e.g. "0.24mm nozzle layer"
-    material: string; // e.g. "Bio-PLA Orgánico Maíz"
-    bulbSocket: string; // e.g. "E27 Cálido 2700K (Incluido)"
-    cableType: string; // e.g. "Textil nórdico 1.8m con interruptor"
-    productionTime: string; // e.g. "18 horas de impresión continua"
+    layerResolution: string; // e.g. "0.20mm micro-capas"
+    material: string; // e.g. "Bio-PLA Sustentable"
+    bulbSocket?: string; // e.g. "E27 LED Cálido 2700K (Incluido)"
+    tuning?: string; // for instruments
+    pickups?: string; // for instruments
+    irrigation?: string; // for plant pots
+    cableType?: string;
+    productionTime: string;
   };
   finishes: MaterialFinish[];
   stockStatus: "in_stock" | "made_to_order";
@@ -60,3 +72,4 @@ export interface StoreSettings {
   pickupAddress: string;
   businessHours: string;
 }
+

@@ -180,7 +180,10 @@ export default function ProductDetailModal({
                   <div>
                     <span className="text-neutral-500 dark:text-neutral-400 block text-[10px]">Dimensiones</span>
                     <span className="font-semibold text-neutral-900 dark:text-white">
-                      {product.dimensions.height} x {product.dimensions.diameter}
+                      {product.dimensions.height}
+                      {product.dimensions.diameter ? ` x ⌀${product.dimensions.diameter}` : ""}
+                      {product.dimensions.width ? ` x ${product.dimensions.width}` : ""}
+                      {` (${product.dimensions.weight})`}
                     </span>
                   </div>
                 </div>
@@ -195,15 +198,53 @@ export default function ProductDetailModal({
                   </div>
                 </div>
 
-                <div className="p-2.5 rounded-xl bg-[#f0ede9] dark:bg-[#1a1a22] border border-neutral-200/80 dark:border-white/5 flex items-center gap-2 transition-colors">
-                  <Lightbulb className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
-                  <div>
-                    <span className="text-neutral-500 dark:text-neutral-400 block text-[10px]">Foco / Rosca</span>
-                    <span className="font-semibold text-neutral-900 dark:text-white">
-                      {product.specs.bulbSocket}
-                    </span>
+                {product.specs.bulbSocket && (
+                  <div className="p-2.5 rounded-xl bg-[#f0ede9] dark:bg-[#1a1a22] border border-neutral-200/80 dark:border-white/5 flex items-center gap-2 transition-colors">
+                    <Lightbulb className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
+                    <div>
+                      <span className="text-neutral-500 dark:text-neutral-400 block text-[10px]">Foco / Iluminación</span>
+                      <span className="font-semibold text-neutral-900 dark:text-white">
+                        {product.specs.bulbSocket}
+                      </span>
+                    </div>
                   </div>
-                </div>
+                )}
+
+                {product.specs.pickups && (
+                  <div className="p-2.5 rounded-xl bg-[#f0ede9] dark:bg-[#1a1a22] border border-neutral-200/80 dark:border-white/5 flex items-center gap-2 transition-colors">
+                    <Sparkles className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
+                    <div>
+                      <span className="text-neutral-500 dark:text-neutral-400 block text-[10px]">Captación Acústica</span>
+                      <span className="font-semibold text-neutral-900 dark:text-white">
+                        {product.specs.pickups}
+                      </span>
+                    </div>
+                  </div>
+                )}
+
+                {product.specs.tuning && (
+                  <div className="p-2.5 rounded-xl bg-[#f0ede9] dark:bg-[#1a1a22] border border-neutral-200/80 dark:border-white/5 flex items-center gap-2 transition-colors">
+                    <Sparkles className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
+                    <div>
+                      <span className="text-neutral-500 dark:text-neutral-400 block text-[10px]">Afinación / Clavijero</span>
+                      <span className="font-semibold text-neutral-900 dark:text-white">
+                        {product.specs.tuning}
+                      </span>
+                    </div>
+                  </div>
+                )}
+
+                {product.specs.irrigation && (
+                  <div className="p-2.5 rounded-xl bg-[#f0ede9] dark:bg-[#1a1a22] border border-neutral-200/80 dark:border-white/5 flex items-center gap-2 transition-colors">
+                    <Sparkles className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+                    <div>
+                      <span className="text-neutral-500 dark:text-neutral-400 block text-[10px]">Cuidado Botánico</span>
+                      <span className="font-semibold text-neutral-900 dark:text-white">
+                        {product.specs.irrigation}
+                      </span>
+                    </div>
+                  </div>
+                )}
 
                 <div className="p-2.5 rounded-xl bg-[#f0ede9] dark:bg-[#1a1a22] border border-neutral-200/80 dark:border-white/5 flex items-center gap-2 transition-colors">
                   <Clock className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />

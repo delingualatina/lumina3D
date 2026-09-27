@@ -8,29 +8,30 @@ import settings from "@/data/settings.json";
 const faqs = [
   {
     q: "¿Cómo se coordina la entrega a domicilio en Mar del Plata?",
-    a: "Una vez que nos escribís por WhatsApp y confirmamos tu modelo, coordinamos el día y franja horaria que te quede más cómodo. Si el producto está en stock, te lo llevamos en 24 a 48 hs hábiles sin cargo a barrios como Güemes, Playa Grande, Centro, Constitución, La Perla y Chauvín. Para otras zonas de General Pueyrredón coordinamos cadetería directa o punto de encuentro.",
+    a: "Una vez que nos escribís por WhatsApp y confirmamos tu modelo, coordinamos el día y franja horaria que te quede más cómodo. Si el producto está en stock, te lo llevamos en 24 a 48 hs hábiles sin cargo a barrios como Güemes, Playa Grande, Centro, Constitución, La Perla y Chauvín. Para otras zonas de General Pueyrredón o envíos al resto del país coordinamos por encomienda directa o punto de encuentro.",
   },
   {
     q: "¿Cómo realizo el pago por transferencia bancaria?",
-    a: "Por WhatsApp te enviamos nuestro Alias oficial (LUMINA.3D.MDP) y CBU para que transfieras desde cualquier banco o billetera virtual (Mercado Pago, Cuenta DNI, etc.). Obtenés un 10% de descuento abonando por transferencia. También podés abonar en efectivo contra entrega al recibir la lámpara en tu mano.",
+    a: `Por WhatsApp te enviamos nuestro Alias oficial (${settings.bankAccount.alias}) y CBU para que transfieras desde cualquier banco o billetera virtual (Mercado Pago, Cuenta DNI, etc.). Obtenés un 10% de descuento abonando por transferencia. También podés abonar en efectivo contra entrega al recibir tu pedido en mano.`,
   },
   {
-    q: "¿La lámpara viene lista para enchufar o tengo que comprar el foco aparte?",
-    a: "¡Viene 100% lista para usar! Cada luminaria incluye un foco LED cálido (2700K) de bajo consumo certificado y probado en taller, portalámparas normalizado (E27 o E14 según el modelo) y cable textil de 1.8m con interruptor de diseño.",
+    q: "¿Qué incluye cada línea de productos (Lumina, Luthier 3D y DecoVerde)?",
+    a: "• Línea Lumina: Cada lámpara incluye foco LED cálido 2700K probado en taller y cable textil con interruptor listo para usar.\n• Línea Luthier 3D: Los instrumentos vienen calibrados con cuerdas de alta calidad, sensor piezoeléctrico activo (si corresponde) y listos para tocar o enchufar.\n• DecoVerde 3D: Las macetas incluyen sistema capilar y las kokedamas flotantes vienen con base electromagnética y esfera vegetal viva.",
   },
   {
-    q: "¿Puedo pedir una altura, diámetro o color especial para mi proyecto?",
-    a: "¡Por supuesto! Como somos un atelier de diseño y manufactura digital en Mar del Plata, podemos escalar modelos, ajustar el grado de traslucidez o imprimir en acabados especiales para arquitectos, interioristas y locales comerciales. Escribinos por WhatsApp y lo diseñamos.",
+    q: "¿Puedo encargar piezas a medida, colores o proyectos especiales?",
+    a: "¡Por supuesto! En Tutto3D somos atelier de diseño y manufactura digital. Realizamos personalizaciones, ajustes de escala, acabados específicos para arquitectos, músicos, paisajistas e interioristas. Escribinos por WhatsApp para contarnos tu idea.",
   },
   {
-    q: "¿Tienen showroom o punto para ver las lámparas encendidas en persona?",
-    a: "Sí, disponemos de un espacio de showroom y retiro coordinado en la zona de Güemes (Mar del Plata) para que puedas apreciar la textura del bio-filamento y la calidez de la luz antes de retirar. Contactanos por WhatsApp para coordinar una visita.",
+    q: "¿Tienen showroom o punto de retiro en Mar del Plata?",
+    a: "Sí, disponemos de espacio de showroom y retiro en la zona de Güemes (Mar del Plata) con cita previa para que puedas apreciar los acabados, la acústica o la luz en persona.",
   },
   {
-    q: "¿El material Bio-PLA es resistente al calor?",
-    a: "Nuestras lámparas están diseñadas para funcionar exclusivamente con tecnología LED de bajo consumo, la cual genera nula emisión calórica. La estructura se mantiene fría al tacto y no sufre ninguna deformación ni pérdida de color a lo largo de los años.",
+    q: "¿Los bio-polímeros utilizados son resistentes y ecológicos?",
+    a: "Utilizamos Bio-PLA sustentable de origen vegetal y bio-composites reforzados. En lámparas no transmiten calor; en instrumentos ofrecen una rigidez estructural y resonancia sobresaliente; y en DecoVerde son totalmente resistentes a la humedad.",
   },
 ];
+
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

@@ -14,33 +14,34 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "01",
-      title: "Elegí tu modelo y acabado",
+      title: "Elegí tu diseño y acabado",
       description:
-        "Explorá nuestra colección de lámparas 3D y seleccioná el color y textura que mejor combine con tu espacio (Arena, Terracota, Blanco Cálido o Basalto).",
+        "Explorá nuestras colecciones de Lámparas Lumina, Instrumentos Luthier 3D o DecoVerde y seleccioná el color y textura que mejor combine con tu espacio o proyecto.",
       icon: <CheckCircle2 className="w-5 h-5 text-amber-600" />,
     },
     {
       number: "02",
       title: "Coordiná tu pedido",
       description:
-        "Escribinos para confirmar disponibilidad, personalizar tu diseño o despejar cualquier duda técnica con el equipo del taller.",
+        "Escribinos por WhatsApp para confirmar disponibilidad inmediata, solicitar personalizaciones o despejar cualquier duda técnica con el equipo del taller.",
       icon: <MessageCircle className="w-5 h-5 text-[#25D366]" />,
     },
     {
       number: "03",
       title: "Pago fácil y seguro",
       description:
-        "Aboná cómodamente mediante transferencia bancaria o efectivo contra entrega, con opciones en cuotas.",
+        "Aboná cómodamente mediante transferencia bancaria (con 10% OFF), efectivo contra entrega en mano o tarjetas en cuotas.",
       icon: <CreditCard className="w-5 h-5 text-amber-700" />,
     },
     {
       number: "04",
-      title: "Entrega a domicilio",
+      title: "Entrega o retiro en taller",
       description:
-        "Recibís tu luminaria cuidadosamente embalada y lista para enchufar con foco LED cálido incluido.",
+        "Recibís tu pieza cuidadosamente embalada y lista para usar (focos LED incluidos en lámparas, instrumentos calibrados, plantas listas).",
       icon: <Truck className="w-5 h-5 text-emerald-600" />,
     },
   ];
+
 
   return (
     <section id="como-comprar" className="py-20 sm:py-28 bg-[#f0ede9]/70 dark:bg-[#0c0c0e] relative border-t border-neutral-200/80 dark:border-white/5 transition-colors duration-300">

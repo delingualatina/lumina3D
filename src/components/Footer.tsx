@@ -1,14 +1,16 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Mail, MapPin, Sparkles, Heart } from "lucide-react";
+
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import settings from "@/data/settings.json";
 
 export default function Footer() {
-  const directWhatsAppUrl = getWhatsAppUrl("¡Hola! Quiero coordinar una consulta desde la web.");
+  const directWhatsAppUrl = getWhatsAppUrl("¡Hola! Quiero consultar sobre las creaciones de Tutto3D.");
 
   return (
     <footer className="bg-neutral-900 text-neutral-300 pt-16 pb-12 border-t border-neutral-800">
@@ -17,8 +19,13 @@ export default function Footer() {
           {/* Col 1: Brand & Atelier Story (5 cols) */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center text-white font-bold text-lg">
-                L3D
+              <div className="relative w-12 h-12 rounded-full overflow-hidden shadow-lg border border-amber-500/30 bg-neutral-950 flex-shrink-0">
+                <Image
+                  src="/images/logo.png"
+                  alt="Tutto3D Logo"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div>
                 <span className="font-bold text-xl text-white block">
@@ -29,13 +36,14 @@ export default function Footer() {
                 </span>
               </div>
             </div>
+
             <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed max-w-sm">
-              Atelier de diseño y fabricación aditiva especializado en luminarias paramétricas impresas en 3D con bio-polímeros sustentables. Diseñado y producido en la costa atlántica.
+              Atelier de diseño y fabricación aditiva de vanguardia. Creadores de <strong>Lámparas Lumina</strong>, <strong>Luthier 3D</strong> y <strong>DecoVerde 3D</strong> (Natura, Kokedamas y 3D). Hecho con bio-polímeros sustentables en Mar del Plata.
             </p>
             <div className="flex items-center gap-2 pt-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
               <span className="text-xs text-neutral-300 font-mono">
-                Atelier disponible para pedidos y consultas
+                Atelier disponible para pedidos y personalizaciones
               </span>
             </div>
           </div>
@@ -43,7 +51,7 @@ export default function Footer() {
           {/* Col 2: Navigation Links (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-xs font-mono uppercase tracking-widest text-neutral-400 font-bold">
-              Explorar
+              Colecciones
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
@@ -51,7 +59,23 @@ export default function Footer() {
                   href="#catalogo"
                   className="hover:text-amber-400 transition-colors"
                 >
-                  Catálogo de Lámparas
+                  Lámparas (Línea Lumina)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#catalogo"
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  Instrumentos (Luthier 3D)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#catalogo"
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  DecoVerde 3D (Kokedamas)
                 </a>
               </li>
               <li>
@@ -146,3 +170,4 @@ export default function Footer() {
     </footer>
   );
 }
+
